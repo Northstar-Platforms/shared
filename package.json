@@ -1,0 +1,46 @@
+{
+  "name": "@northstar/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "El código idéntico en el control plane y la consola de Northstar Platforms: el mundo Polar Night, la marca Polaris, las piezas de consola y los helpers de Pages Functions. TypeScript crudo: el bundler de la app que lo consume lo compila.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Northstar-Platforms/shared.git"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.ui.json --noEmit && tsc -p tsconfig.worker.json --noEmit",
+    "docs": "node scripts/gen-docs.mjs",
+    "docs:check": "node scripts/gen-docs.mjs --check",
+    "docs:gaps": "node scripts/gen-docs.mjs --gaps",
+    "test": "tsx --test \"worker/**/*.test.ts\" \"components/**/*.test.ts\""
+  },
+  "peerDependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "lucide-react": "^0.575.0",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20260302.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "lucide-react": "^0.575.0",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.5.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}

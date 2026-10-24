@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T00:00:00Z",
+  "title": "Design System: Northstar Platforms (Polar Night)",
+  "scope": {
+    "selector": "html.sk, html.site.sk",
+    "stylesheets": ["shared/styles/site.css", "shared/styles/sky.css", "shared/styles/kit.css"],
+    "applies": "El sitio público y la consola de cuenta de northstarplatforms.co y la consola del staff en admin.northstarplatforms.co. El sitio monta class=\"sk sk-page\" en <html>; una consola monta class=\"site sk\" (o un <div class=\"site sk\"> dentro de una página) e importa site.css, sky.css y kit.css en ese orden desde src/index.css. La marca es components/sky.tsx (Mark, Wordmark); las piezas de consola son components/console-kit.tsx y console.tsx; los 24 primitivos de shadcn bajo shared/ui/ conservan su API vestidos con el vocabulario del mundo.",
+    "extends": "shared/DESIGN.md (Polar Night) es el canónico; northstar/DESIGN.md documenta las superficies del sitio."
+  },
+  "colors": {
+    "ground": { "role": "neutral", "displayName": "Nieve", "canonical": "#f3f4f7", "purpose": "el suelo de la página y theme-color" },
+    "mist": { "role": "neutral", "displayName": "Niebla", "canonical": "#e9ebf1", "purpose": "rieles, pastillas, tableros" },
+    "haze": { "role": "neutral", "displayName": "Bruma", "canonical": "#dcdfe8", "purpose": "rieles de deslizador, el monograma" },
+    "surface": { "role": "neutral", "displayName": "Superficie", "canonical": "#ffffff", "purpose": "tarjetas, campos, tablas" },
+    "ink": { "role": "primary", "displayName": "Noche polar", "canonical": "#0f1424", "purpose": "titulares y la única píldora primaria" },
+    "ink-2": { "role": "neutral", "displayName": "Tinta 2", "canonical": "#474d63", "purpose": "el cuerpo" },
+    "ink-3": { "role": "neutral", "displayName": "Tinta 3", "canonical": "#5c6378", "purpose": "la voz pequeña; 5.4:1 sobre la nieve" },
+    "accent": { "role": "accent", "displayName": "Aurora", "canonical": "#0e6e62", "purpose": "marca, enlaces, foco; 5.6:1 sobre la nieve, 6.1:1 sobre blanco; nunca como texto salvo en enlaces" },
+    "accent-soft": { "role": "accent", "displayName": "Aurora tintada", "canonical": "#dff2ec", "purpose": "el fondo del acento tintado (Tag, Callout, StatTile)" },
+    "accent-deep": { "role": "accent", "displayName": "Aurora honda", "canonical": "#0a5a50", "purpose": "el texto sobre accent-soft (6.9:1)" },
+    "star": { "role": "secondary", "displayName": "La estrella", "canonical": "#f3cf7a", "purpose": "sólo dentro del cielo: el núcleo de la marca y el resplandor de sk-polaris" },
+    "night": { "role": "primary", "displayName": "Cielo", "canonical": "#0b1026", "purpose": "el arranque del cielo de los paneles" },
+    "night-2": { "role": "primary", "displayName": "Cielo 2", "canonical": "#141b3a", "purpose": "la base del cielo" },
+    "night-ink": { "role": "neutral", "displayName": "Tinta de la noche", "canonical": "#eef0f8", "purpose": "titulares sobre el cielo (8.7:1)" },
+    "night-ink-2": { "role": "neutral", "displayName": "Tinta de la noche 2", "canonical": "#aab1c9", "purpose": "el cuerpo sobre el cielo y los arcos de la estela" },
+    "destructive": { "role": "danger", "displayName": "Destructivo", "canonical": "#b3261e" }
+  },
+  "typography": {
+    "family": "Geist, Segoe UI, system-ui, sans-serif",
+    "weights": [400, 450, 500, 600],
+    "display": { "fontWeight": 500, "letterSpacing": "-0.038em", "lineHeight": 1.04 },
+    "h2": { "fontWeight": 500, "letterSpacing": "-0.032em", "lineHeight": 1.08 },
+    "h3": { "fontWeight": 500, "letterSpacing": "-0.018em", "lineHeight": 1.25 },
+    "body": { "lineHeight": 1.6, "baseSize": "15px en consola, 17px en el sitio" },
+    "small": { "fontSize": "0.8125rem", "lineHeight": 1.5 },
+    "ramp": ["0.6875rem", "0.75rem", "0.8125rem", "0.875rem", "0.9375rem", "1rem", "1.0625rem"]
+  },
+  "rounded": { "tile": "10px", "field": "12px", "card": "18px", "window": "20px", "dialog": "24px", "panel": "28px", "pill": "999px" },
+  "spacing": { "module": "4px", "column": "1240px", "header": "64px" },
+  "shadows": {
+    "base": "rgba(18, 22, 46, …)",
+    "shadow-1": "0 1px 2px rgba(18,22,46,0.05), 0 4px 14px -6px rgba(18,22,46,0.10)",
+    "shadow-2": "0 1px 2px rgba(18,22,46,0.05), 0 18px 40px -18px rgba(18,22,46,0.22)",
+    "shadow-3": "0 2px 6px rgba(18,22,46,0.06), 0 40px 80px -32px rgba(18,22,46,0.30)"
+  },
+  "motion": {
+    "enter": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "move": "cubic-bezier(0.77, 0, 0.175, 1)",
+    "ui": "140 a 260ms",
+    "hero": "hasta 900ms",
+    "active": "scale(0.97)",
+    "reducedMotion": "un fotograma"
+  },
+  "rules": [
+    "una sola familia (Geist); jerarquía por tamaño y peso",
+    "un solo acento; la acción primaria es la píldora de tinta",
+    "el oro de la estrella sólo dentro del cielo",
+    "sombra o línea, nunca las dos",
+    "vidrio sólo en lo que flota",
+    "módulo de 4px; radios 6/8/10/12/18/28 y píldora",
+    "sin antetítulos, sin ordinales de adorno, sin rayas en el texto visible",
+    "regla de evidencia: nada inventado en una superficie de persuasión"
+  ]
+}

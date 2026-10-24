@@ -1,0 +1,26 @@
+{
+  // La mitad del navegador: todo menos worker/. Calca el tsconfig.app.json de
+  // cada app para que un archivo que compila aquí compile en cada consumidor.
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["ui", "lib", "hooks", "components"],
+  // Las pruebas (node:test vía tsx) usan tipos de Node: fuera del typecheck.
+  "exclude": ["**/*.test.ts"]
+}
