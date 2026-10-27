@@ -74,7 +74,7 @@ está lista simplemente se queda en el tag anterior.
 - **Sólo código genuinamente idéntico entre las dos apps.** Algo que necesite
   saber en qué app corre pertenece a la app, o hay que **parametrizarlo antes**
   de moverlo aquí.
-- **Ningún dominio escrito.** `northstarplatforms.co` es configuración de cada
+- **Ningún dominio escrito.** `arcade.lat` es configuración de cada
   app; aquí llega como parámetro (`iconUrl`, `preferencesUrl`…) o no llega.
 - **Sólo importaciones relativas dentro del paquete** (`../lib/utils`, no
   `@/lib/utils`). El alias `@/` es de cada app; el bundler del consumidor no sabe

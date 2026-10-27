@@ -1,8 +1,8 @@
 # @northstar/shared
 
 **El código idéntico en el control plane de Northstar Platforms
-(`northstarplatforms.co`) y en la consola del staff
-(`admin.northstarplatforms.co`).** Cada uno es su propio repositorio y se
+(`arcade.lat`) y en la consola del staff
+(`admin.arcade.lat`).** Cada uno es su propio repositorio y se
 despliega por su cuenta; este paquete es lo que evita que carguen dos copias
 byte a byte del mismo archivo: el mundo visual **Polar Night**, la marca
 Polaris, las piezas de consola y los helpers de Pages Functions.
