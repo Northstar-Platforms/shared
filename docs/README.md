@@ -74,7 +74,7 @@ apps fijan un tag y suben cuando quieren, en vez de seguir a master.
    corre pertenece a la app, o hay que parametrizarlo **antes** de moverlo aquí
    (así se hizo con el icono de marca del correo: `iconUrl`, no un dominio
    escrito).
-2. **Ningún dominio escrito.** `arcade.lat` vive en la configuración
+2. **Ningún dominio escrito.** `northstarplatforms.dev` vive en la configuración
    de cada app (`functions/_lib/platform.ts`), nunca aquí.
 3. **Las dependencias de runtime son `peerDependencies`, nunca `dependencies`.**
    Una segunda copia de React dentro de `node_modules/@northstar/shared/` rompe

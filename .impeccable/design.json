@@ -5,7 +5,7 @@
   "scope": {
     "selector": "html.sk, html.site.sk",
     "stylesheets": ["shared/styles/site.css", "shared/styles/sky.css", "shared/styles/kit.css"],
-    "applies": "El sitio público y la consola de cuenta de arcade.lat y la consola del staff en admin.arcade.lat. El sitio monta class=\"sk sk-page\" en <html>; una consola monta class=\"site sk\" (o un <div class=\"site sk\"> dentro de una página) e importa site.css, sky.css y kit.css en ese orden desde src/index.css. La marca es components/sky.tsx (Mark, Wordmark); las piezas de consola son components/console-kit.tsx y console.tsx; los 24 primitivos de shadcn bajo shared/ui/ conservan su API vestidos con el vocabulario del mundo.",
+    "applies": "El sitio público y la consola de cuenta de northstarplatforms.dev y la consola del staff en admin.northstarplatforms.dev. El sitio monta class=\"sk sk-page\" en <html>; una consola monta class=\"site sk\" (o un <div class=\"site sk\"> dentro de una página) e importa site.css, sky.css y kit.css en ese orden desde src/index.css. La marca es components/sky.tsx (Mark, Wordmark); las piezas de consola son components/console-kit.tsx y console.tsx; los 24 primitivos de shadcn bajo shared/ui/ conservan su API vestidos con el vocabulario del mundo.",
     "extends": "shared/DESIGN.md (Polar Night) es el canónico; northstar/DESIGN.md documenta las superficies del sitio."
   },
   "colors": {
